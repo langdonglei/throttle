@@ -1,0 +1,18 @@
+{
+  "name": "langdonglei/throttle",
+  "description": "",
+  "require": {
+    "topthink/think-cache": "^2.0",
+    "nesbot/carbon": "^2.48"
+  },
+  "autoload": {
+    "psr-4": {
+      "langdonglei\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "test\\": "test"
+    }
+  }
+}
