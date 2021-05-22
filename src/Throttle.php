@@ -21,7 +21,7 @@ class Throttle
     private static function check($key, $limit, $expire)
     {
         if ($limit) {
-            if (Cache::incr($key) >= $limit) {
+            if (Cache::incr($key) > $limit) {
                 $wait = Cache::ttl($key);
                 if ($wait < 0) {
                     $wait = 0;
