@@ -24,7 +24,7 @@ class Throttle
             if (Cache::incr($key) > $limit) {
                 $wait = Cache::ttl($key);
                 if ($wait < 0) {
-                    $wait = 0;
+                    $wait = $expire;
                     Cache::expire($key, $expire);
                 }
             }
