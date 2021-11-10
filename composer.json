@@ -2,17 +2,15 @@
   "name": "langdonglei/throttle",
   "description": "",
   "require": {
-    "topthink/think-cache": "^2.0",
-    "nesbot/carbon": "^2.48"
+    "nesbot/carbon": "^2.48",
+    "ext-redis": "*"
   },
   "autoload": {
     "psr-4": {
       "langdonglei\\": "src"
     }
   },
-  "autoload-dev": {
-    "psr-4": {
-      "test\\": "test"
-    }
+  "require-dev": {
+    "phpunit/phpunit": "^9.5"
   }
 }
