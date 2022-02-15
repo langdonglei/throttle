@@ -11,7 +11,7 @@ class Throttle
 {
     private Redis $redis;
 
-    public function __construct(Redis $redis)
+    public function __construct($redis)
     {
         $this->redis = $redis;
     }
